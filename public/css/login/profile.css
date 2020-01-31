@@ -1,0 +1,153 @@
+.mr-10{
+	margin-right: 10px;
+}
+.ml-10{
+	margin-left: 10px;
+}
+#crop .card{
+	width: 86%;
+	max-width: 500px;
+	margin: 1.75rem auto;
+}
+.right-main-content{
+	padding: 15px 20px;
+}
+#change_password{
+	font-size: 12px;
+	color: deepskyblue;
+	cursor: pointer;
+}
+#change_password:hover{
+	text-decoration: underline;
+}
+#cover_change_password{
+	display: none;
+}
+.right-main-content .profile_content{
+	width: calc(100% );
+	height: fit-content;
+	flex-flow: column;
+	background: #292c3e;
+	border-radius: 4px;
+	padding-bottom: 15px;
+}
+.right-main-content .breadcrumb{
+	padding: 0;
+	background: 0 0;
+	font-size: .9em;
+	border-radius: 0 0 4px 4px;
+}
+.right-main-content .breadcrumb li:not(:last-child){
+	line-height: 44px;
+}
+.right-main-content .breadcrumb li a {
+	color: #9a9ba0;
+}
+.right-main-content .breadcrumb li a i{
+	margin-right: 5px;
+}
+.right-main-content .cover_change,
+.right-main-content  #img_change_avatar{
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+}
+.right-main-content .cover_change .hover_change{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	transition: 0.3s;
+	background: #222;
+	opacity: 0;
+	transform: scale(1.4);
+	z-index: 2;
+}
+.right-main-content .cover_change .hover_change i{
+	color: #fff;
+	font-size: 24px;
+	cursor: pointer;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+}
+.right-main-content .cover_change:hover .hover_change{
+	opacity: 0.4;
+	transform: scale(1);
+}
+.right-main-content .profile_content{
+	color: #f9ecde;
+	position: relative;
+}
+.right-main-content .profile_content .form-control{
+	background: #222435!important;
+	color: #f9ecde !important;
+	font-family: open sans,sans-serif;
+	font-size: 13px!important;
+	border: 1px solid #30344c!important;
+	width: 100%!important;
+	outline: 0!important;
+}
+.right-main-content .profile_content button#gender:focus,
+.right-main-content .profile_content select:focus,
+.right-main-content .profile_content input:focus{
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+.note-placeholder{
+	z-index: 10;
+}
+.note-editor .note-dropzone { opacity: 0 !important; }
+.right-main-content .profile_content .gender{
+	position: relative;
+}
+.right-main-content .profile_content .gender i{
+	position: absolute;
+	bottom: 12px;
+	right: 8px;
+	color: #b39b9b;
+}
+#active-link{
+	position: relative;
+	background: #292c3e;
+	padding: 12px 40px;
+	margin-left: 5px;
+	color: #fff;
+}
+#active-link:before{
+	content: "";
+	position: absolute;
+	right: -20px;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 21px solid #292c3e;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+}
+#active-link:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	height: 0;
+	border-left: 21px solid #3b3d50;
+	border-top: 22px solid transparent;
+	border-bottom: 22px solid transparent;
+}
+@media only screen and (max-width: 500px) {
+	.croppie-container .cr-boundary{
+		width: 285px !important;
+	}
+	#crop .card {
+		width: 96%;
+	}
+	.modal-body .col{
+		padding: 0;
+	}
+}

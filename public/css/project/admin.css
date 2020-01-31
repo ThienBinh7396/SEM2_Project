@@ -1,0 +1,191 @@
+::-webkit-scrollbar {
+	width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555; 
+}
+.product ul{
+	padding: 0;
+}
+.product ul li{
+	margin-bottom: 10px;
+	display: inline-block;
+	list-style: none;
+	width: 120px;
+	color: #fff;
+	padding: 5px;
+	background: linear-gradient(135deg ,#7670ea, #3e3ac1);
+	border-radius: 5px;
+	position: relative;
+	cursor: default;
+}
+.product .remove{
+	position: absolute;
+	top: 0px;
+	right: 5px;
+	opacity: 0;
+	transition: 0.35s;
+	cursor: pointer;
+}
+.product ul li:hover .remove{
+	opacity: 1;
+}	
+.product .category ul li{
+	font-weight: bold;
+	user-select: none;
+}
+.product .category ul li input.edit{
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	color: #000;
+	padding-left: 5px;
+	border: 1px solid #80bdff;
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+.product .actived{
+	background: linear-gradient(135deg ,#e85371, #b22e48);
+}
+.product .category .actived:after{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	transform: translateY(-50%);
+	width:48px;
+	z-index: 0;
+	height: 2px;
+	background: rgba(95, 93, 150, 0.5);
+}
+.product .show_product{
+	background: #ecf0f5;
+	padding-left: 10px;
+	border-left: 2px solid rgba(95, 93, 150, 0.5);
+	max-height: 320px;
+	overflow: auto;
+}
+.product .show_product li{
+	width: 150px;
+}
+.product .tb_button{
+	width: 120px;
+	color: #fff;
+	padding: 5px;
+	background: -webkit-linear-gradient(top left, #49e549, #2b9b2b);
+	background: -o-linear-gradient(top left, #49e549, #2b9b2b);
+	background: linear-gradient(to bottom right, #49e549, #2b9b2b);
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.product .tb_button.add_product{
+	background: linear-gradient(to bottom right, #ddb25d, #c4912b);
+}
+.product .information .cover{
+	/*display: none;*/	
+}
+.product .information .cover .form-group-item{
+	display: inline-block;
+	width: 45%;	
+	margin-right: 22px;
+}
+.product .information .cover .form-group .list{
+	display: flex;
+	flex-wrap: wrap;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	transition: 0.9s;	
+}
+.product .information .cover .form-group .list .list_item{ 
+	height: 110px;
+	width: 110px;
+	line-height: 98px;
+	text-align: center;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	position: relative;
+	border: 1.5px dashed #abc;
+}
+.product .information .cover .form-group .list .list_item:nth-child(1){
+	border: 1.5px dashed #53a4e2;
+	background: #fdfdfd;
+	font-size: 80px;
+	color: rgba(83, 164, 226, 0.65);
+	cursor: pointer;
+}
+.product .information .cover .form-group .list .list_item:nth-child(1):hover{
+	color: rgba(83, 164, 226, 1);
+}
+.product .information .cover .form-group .list .list_item img{ 
+	width: 100%;
+	height: 100%;
+}
+.product .information .cover .form-group .list .list_item .remove{
+	width: 25px;
+	height: 25px;
+	font-size: 18px;
+	line-height: 25px;
+}
+.product .information .cover .form-group .list .list_item:hover .remove{
+	opacity: 1;
+}
+.product .information .cover .form-group .list .list_item .remove:hover{
+	color: red;
+}
+.product .information .cover input[type= 'file']{
+	display: none;
+}
+.product .information .cover #product_description{
+	width: 90.5%;
+	height: 100px;
+	transition: box-shadow 0.6s;
+	padding: 10px;
+	border: 1px solid #ced4da
+}
+.product .information .cover input{
+	transition: box-shadow 0.6s;
+	border: 1px solid #ced4da;
+	margin-left: 20px;
+    width: 170px;
+    height: 35px;
+    padding: 5px;
+}
+.product .information .cover input:focus,
+.product .information .cover #product_description:focus{
+	border-color: #53a4e2;
+	box-shadow: 0 0 0 3px rgba(83, 164, 226,.25);
+}
+.product .note span{
+	color: #ef1c1c;
+}
+.rate_cover{
+	width: 200px;
+	height: 40px;
+	position: relative;
+}
+.rate_cover .rate_user{
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}

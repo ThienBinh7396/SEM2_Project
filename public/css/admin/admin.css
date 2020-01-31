@@ -1,0 +1,131 @@
+.swal2-show{
+	font-size: 100% !important;
+}
+.cover_tb_table_dark{
+	height: 400px;
+}
+.tb_table_dark{
+	background: #333;
+	color: rgba(255,255,255,.9);
+	border: none;
+	font-size: 1em;
+	border-radius: .28571429rem;
+	border-spacing: 0;
+}
+.tb_table_dark td,
+.tb_table_dark th,
+.tb_table_dark tr{
+	border: none !important;	
+}
+.tb_table_dark tr{
+	border-bottom: 1px solid rgba(255,255,255,.1) !important;
+}
+.tb_table_dark th {
+	background-color: rgba(0,0,0,.15);
+	color: rgba(255,255,255,.9)!important;
+}
+.tb_table_dark tbody{
+	background: #383838;
+	cursor: default !important; 
+	user-select: none;
+}
+table{
+	border-radius: 5px;
+}
+thead{
+	background: #2a81cb;
+}
+tbody tr:hover,
+tbody tr.actived{
+	background: #f2f9fc;
+}
+.tb_table_dark tbody tr.actived,
+.tb_table_dark tbody tr:hover{
+	background: rgba(255,255,255,.08)!important;
+	color: #fff!important;
+}
+.tb_table_dark tbody tr td:nth-child(3){
+	text-transform: capitalize;
+}
+.cover_image{
+	width: 40px; 
+	height: 40px; 
+	border: 1px dashed blue;
+	cursor: pointer;
+}
+ul{
+	padding: 0;
+	list-style: none;
+	
+}
+.tb_inline{
+	display: inline-block;
+}
+.show_icon_category{
+	margin-right: 15px;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	user-select: none;
+}
+
+.show_icon_category.actived,
+.show_icon_category:hover{
+	background: #4ee8cb;
+}
+.show_icon_category img{
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tb_controll .slimScrollDiv{
+	height: 134px;
+	margin-top: 10px;
+}
+.cover_body_icon{
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+.cover_header_category{
+	margin: 0 !important;
+}
+.cover_body_icon .cover_body_icon_item{
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 2%;
+	position: relative;
+	text-align: center;
+}
+.cover_body_icon .cover_body_icon_item.handle_background_js{
+	cursor: pointer;
+    height: 60px;
+    width: 60px;
+    background-position: -6px -6px;
+    image-rendering: -webkit-optimize-contrast;
+}
+.cover_body_icon .cover_body_icon_item img{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+}
+.cover_body_icon .cover_body_icon_item .tb_remove_icon{
+	position: absolute;
+	top: 0px;
+	right: 0px; 
+	opacity: 0;
+	color: rgba(255, 0, 0, 0.8);
+	cursor: pointer;
+	transition: 0.3s;
+	font-size: 14px;
+}
+.cover_body_icon .cover_body_icon_item:hover .tb_remove_icon{
+	opacity: 1;
+}
+.cover_body_icon .cover_body_icon_item .cover_body_icon_text{
+	font-size: 26px;
+}

@@ -1,0 +1,38 @@
+.tb_hidden{
+	display: none;
+}
+.tb_flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tb_block{
+	display: block;
+}
+.tb_inline{
+	display: inline;
+}
+.tb_inline_block{
+	display: inline-block;
+}
+.tb_relative{
+	position: relative;
+}
+.tb_absolute{
+	position: absolute;
+}
+.tb_absolute_center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tb_fixed{
+	position: fixed;
+}
+.tb_uppercase{
+	text-transform: uppercase;
+}
+.tb_pointer{
+	cursor: pointer;
+}
+
